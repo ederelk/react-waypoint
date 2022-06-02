@@ -86,7 +86,7 @@ declare namespace Waypoint {
          * For instance, if you pass "20%", and the containing element is 100px tall,
          * then the waypoint will be triggered when it has been scrolled 20px beyond
          * the bottom of the containing element.
-         * 
+         *
          * Similar to `topOffset`, but for the bottom of the container.
          */
         bottomOffset?: string|number;
@@ -110,5 +110,10 @@ declare namespace Waypoint {
          * things down significantly, so it should only be used during development.
          */
         debug?: boolean;
+        
+        /**
+         * Since React 18 Children are no longer implied, therefore we specify them here
+         */
+       children?: React.ReactNode;
     }
 }
